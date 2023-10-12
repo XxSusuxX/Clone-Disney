@@ -23,7 +23,6 @@
             </ul>
         </div>
     </header>
-    <h1>Olá</h1>
     <section class="hero">
         <div class="hero__content">
             <div class="hero__content__branding">
@@ -173,7 +172,10 @@
         </div>
     </section>
     <section class="image-text-section image-text-section--image-full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="Rei leão">
+        <picture>
+            <source media="(max-width:768px)" srcset="./dist/images/fundo_rei_leao_celular.png">
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei leão">
+        </picture>
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
             <h2 class="title">Baixe filmes e séries</h2>
             <p class="text--big">
@@ -327,6 +329,6 @@
             </p>
         </div>
     </footer>
-    <script src="./src/scripts/main.js"></script>
+    <script src="./dist/js/main.js"></script>
 </body>
 </html>
