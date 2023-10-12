@@ -19,6 +19,12 @@
                 cursor: pointer;
                 position: relative;
 
+                @media (max-width: 768px) {
+                    p {
+                        width: calc(100% - 6vw);
+                    }
+                }
+                
                 &::after{
                     content: '+';
                     position: absolute;
